@@ -27,10 +27,21 @@
         android:id="@+id/buttonKQ"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Button" />
+        android:text="Tong" />
 
     <TextView
         android:id="@+id/textViewKQ"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <Button
+        android:id="@+id/buttonHieu"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Hieu" />
+
+    <TextView
+        android:id="@+id/textViewHieu"
         android:layout_width="match_parent"
         android:layout_height="wrap_content" />
 </LinearLayout>

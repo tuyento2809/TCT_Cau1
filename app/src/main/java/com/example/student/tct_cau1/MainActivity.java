@@ -10,8 +10,8 @@ import android.widget.TextView;
 public class MainActivity extends AppCompatActivity {
 
     EditText editTextA, editTextB;
-    TextView textViewKQ;
-    Button buttonKQ;
+    TextView textViewKQ, textViewHieu;
+    Button buttonKQ, buttonHieu;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -21,7 +21,10 @@ public class MainActivity extends AppCompatActivity {
         editTextA = findViewById(R.id.editTextA);
         editTextB = findViewById(R.id.editTextB);
         textViewKQ = findViewById(R.id.textViewKQ);
+        textViewHieu = findViewById(R.id.textViewHieu);
         buttonKQ = findViewById(R.id.buttonKQ);
+
+        buttonHieu = findViewById(R.id.buttonHieu);
 
         buttonKQ.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -33,5 +36,14 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
+        buttonHieu.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                int a = Integer.parseInt(editTextA.getText().toString());
+                int b = Integer.parseInt(editTextB.getText().toString());
+                int kq = a-b;
+                textViewKQ.setText("Hieu la: "+kq);
+            }
+        });
     }
 }
