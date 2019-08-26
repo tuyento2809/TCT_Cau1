@@ -33,6 +33,8 @@ public class MainActivity extends AppCompatActivity {
                 int b = Integer.parseInt(editTextB.getText().toString());
                 int kq = a+b;
                 textViewKQ.setText("Tong la: "+kq);
+                //jgh
+
             }
         });
 
