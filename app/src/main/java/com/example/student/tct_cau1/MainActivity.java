@@ -29,7 +29,7 @@ public class MainActivity extends AppCompatActivity {
                 int a = Integer.parseInt(editTextA.getText().toString());
                 int b = Integer.parseInt(editTextB.getText().toString());
                 int kq = a+b;
-                textViewKQ.setText("Ket qua: "+kq);
+                textViewKQ.setText("Tong la: "+kq);
             }
         });
 
